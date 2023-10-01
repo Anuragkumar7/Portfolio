@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/30567d21a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav class="sticky-nav">
+          <ul id="sidemenu">
+           <div class="icons-nav"><li><a href="#home"><i class="fa-solid fa-house-chimney-user"></i></a></li></div> 
+           <div class="icons-nav"><li><a href="#about"><i class="fa-solid fa-address-card"></i></a></li></div> 
+           <div class="icons-nav"><li><a href="#portfolio"><i class="fa-solid fa-list-check"></i></a></li></div> 
+           <div class="icons-nav"><li><a href="#services"><i class="fa-solid fa-handshake-angle"></i></a></li></div> 
+           <div class="icons-nav"><li><a href="#contact"><i class="fa-solid fa-envelope"></i></a></li></div> 
+           <div class="icons-nav "> <li><a href="my-cv.pdf"><i class="fa-solid fa-download download-cv"></i></a></li></div>
+            <div class="phone-btn"><i class="fas fa-solid fa-xmark" onclick="closemenu()"></i></div>
+          </ul>
+          <div class="phone-btn">  <i class="fas fa-solid fa-bars" onclick="openmenu()"></i></div>
+        </nav>
+        <div id="home" class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm
+            <span>Anurag</span>
+            <br />
+            From India
+          </h1>
+         
+        <div class="tringle"></div>
+      
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="user.png" alt="image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1> 
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Recusandae et blanditiis exercitationem repellendus provident vel,
+              perspiciatis molestiae libero iusto veniam, modi aspernatur
+              corporis aliquam nam! Consequuntur fuga vero beatae explicabo?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              minima deserunt est doloribus ipsam tempora nesciunt iusto, iste
+              sunt, tenetur neque! Nisi repellat ut, maiores ex perspiciatis
+              obcaecati animi distinctio! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Voluptatibus tempore ad id, placeat asperiores
+              similique accusantium aliquid unde esse repudiandae, neque ipsum
+              laborum odit natus recusandae dolor quidem nostrum porro.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Developer</span>
+                  <br />
+                  Website Developer
+                </li>
+                <li>
+                  <span>Video Editer</span>
+                  <br />
+                  Edit videos
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience"></div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019</span>
+                  <br />
+                  High School from City Children's Academy
+                </li>
+                <li>
+                  <span>Currently</span>
+                  <br />
+                  B.Tech.(CSE) from PTU
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="5665422.jpg" alt="image" />
+            <div class="layer">
+              <h3>ToDo List</h3>
+              <p>
+                A dynamic to-do list is a digital tool that helps you manage tasks efficiently 
+                with features like real-time updates, prioritization, reminders, and collaboration.
+              </p>
+              <a href="https://github.com/Anuragkumar7/todolist">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="weather.jpg" alt="image" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                A weather app provides real-time weather information 
+                and forecasts for planning and decision-making.
+              </p>
+              <a href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" alt="image" />
+            <div class="layer">
+              <h3>Drum-kit</h3>
+              <p>Play the virtual drum kit using your computer keyboard.</p>
+              <a href="https://github.com/Anuragkumar7/Drum" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-4.png" alt="image" />
+            <div class="layer">
+              <h3>Simon-game</h3>
+              <p>
+                The Simon game is the exciting electronic game of lights and
+                sounds in which players must repeat random sequences of lights
+                by pressing the colored pads in the correct order.
+              </p>
+              <a href="https://github.com/Anuragkumar7/Simon-Game" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="calculator.jpg" alt="image" />
+            <div class="layer">
+              <h3>calculator</h3>
+              <p>
+                A simple calculator with keyboard functionality lets users perform 
+                basic math operations using a keyboard interface for quick and convenient calculations.
+              </p>
+              <a href="https://github.com/Anuragkumar7/Codsoft/commit/06856842c4ac521d25c300bb3485df648747dbb1" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+        <a class="btn" href="#">See More</a>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code fa-3x"></i>
+            <h2>WEB Developer</h2>
+            <p>
+              Web development is the work involved in developing a website for
+              the Internet (World Wide Web) or an intranet (a private network)
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt fa-3x"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio
+              sit ipsam exercitationem architecto, laudantium laboriosam nulla
+              incidunt accusantium obcaecati.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-video fa-2x"></i>
+            <h2>Video Editer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio
+              sit ipsam exercitationem architecto, laudantium laboriosam nulla
+              incidunt accusantium obcaecati.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              contact@gmail.com
+            </p>
+            <p>
+              <i class="fa-solid fa-square-phone"></i>
+              0123456789
+            </p>
+            <a href="https://www.linkedin.com/in/anurag-kumar-9a1bb7209/">
+              <i class="icons fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100023021406868">
+              <i class="icons fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/anurag_kumar._/">
+              <i class="icons fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/PRONoob86488848">
+              <i class="icons fa-brands fa-square-twitter"></i>
+            </a>
+
+            <br />
+            <div class="cv-btn">
+            <a href="my-cv.pdf"><button download type="submit" class="btn btn2">Download CV</button></a>
+          </div>
+            <!-- <a href="my-cv.pdf" download class="btn btn2">Download</a> -->
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                class="fom"
+                type="text"
+                name="Name"
+                placeholder=" Your Name"
+                required
+              />
+              <input
+                class="fom"
+                type="email"
+                name="Email"
+                placeholder=" Your Email"
+                required
+              />
+              <textarea
+                class="fom"
+                name="Massage"
+                rows="6"
+                placeholder=" Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright © Anurag. Made with
+        <i class="fa-solid fa-heart"></i>
+        by Anurag kumar
+      </p>
+    </div>
+
+  <script src="script.js"></script>
+  </body>
+</html>
